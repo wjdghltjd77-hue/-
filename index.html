@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="logo" id="logo"></a>
+    <nav>
+      <a href="#about">소개</a>
+      <a href="#projects">프로젝트</a>
+      <a href="#experience">경력</a>
+      <a href="#contact">연락처</a>
+      <button id="theme" aria-label="테마 전환">◐</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="avatar" id="avatar"></div>
+      <h1 id="name"></h1>
+      <p class="role" id="role"></p>
+      <p class="intro" id="intro"></p>
+      <a href="#contact" class="btn">연락하기</a>
+    </section>
+
+    <section id="about">
+      <h2>소개</h2>
+      <div id="about-text"></div>
+      <h3>기술 스택</h3>
+      <ul class="skills" id="skills"></ul>
+    </section>
+
+    <section id="projects">
+      <h2>프로젝트</h2>
+      <div class="grid" id="project-list"></div>
+    </section>
+
+    <section id="experience">
+      <h2>경력 · 학력</h2>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section id="contact">
+      <h2>연락처</h2>
+      <ul class="contact" id="contact-list"></ul>
+    </section>
+  </main>
+
+  <footer><span id="year"></span> <span id="footer-name"></span></footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
